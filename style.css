@@ -26,7 +26,6 @@ body {
 .navbar-toggler {
     border-color: #fff !important;
 }
-
 .navbar-toggler-icon {
     filter: invert(1) brightness(2);
     color: #fff !important;
@@ -40,7 +39,10 @@ body {
     height: 100vh;
     display: grid;
 }
-
+.hero-text {
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.6);
+    /* padding-top: 200px ; */
+}
 
 .lottie-hero {
     width: 100%;
