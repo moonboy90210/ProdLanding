@@ -38,18 +38,18 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero d-flex align-items-center">
+    <section id="hero" class="hero d-flex align-items-center mb-5">
         <div class="container">
-            <div class="row align-items-center pt-5 mt-lg-0">
+            <div class="row align-items-center">
                 <!-- Left: Text + CTA -->
-                <div class="col-lg-6 col-md-12 text-light hero-text pt-5">
+                <div class="col-lg-6 col-md-12 text-light hero-text text-lg-start">
                     <h1 class="display-4 fw-bold pt-5 mb-4" data-aos="fade-right" data-aos-delay="100">Connect.
                         Broadcast. Inspire.</h1>
                     <p class="lead mb-4" data-aos="fade-right" data-aos-delay="200">Broadvise lets you stream,
                         collaborate, and create
                         stunning live experiences —
                         all in one place.</p>
-                    <a href="#form" class="btn btn-primary btn-lg px-4 mb-3 py-2 cta-btn" data-aos="fade-up">Get Early
+                    <a href="#form" class="btn btn-primary btn-lg px-4 mb-2 py-2 cta-btn" data-aos="fade-up">Get Early
                         Access</a>
                 </div>
 
@@ -152,14 +152,14 @@
             <form id="form" class="d-flex justify-content-center flex-wrap gap-3" action="" data-aos="fade-left">
                 <input type="email" id="email" name="email" class="form-control form-control-lg rounded-pill w-50"
                     placeholder="Enter your email" required>
-                <input type="submit" id="submit" class="btn btn-info btn-lg rounded-pill px-4" value="Join Now">
+                <input type="submit" id="submit" class="btn btn-info btn-lg rounded-pill px-4 text-light" value="Join Now">
             </form>
         </div>
     </section>
     <div id="chat-widget" class="chat-widget">
         <div class="justify-content-between ">
             <div class="chat-header">💬 Need help hosting?
-                <button class="btn-close"></button>
+                <button class="btn-close" title="close"></button>
             </div>
         </div>
         <div class="chat-body">
@@ -191,10 +191,13 @@
             e.target.style.transition = 'opacity 0.8s ease';
         });
 
-        // widget Auto-show after 5s
+        // widget Auto-show after 5s & dissapear after 15s
         setTimeout(() => {
             document.getElementById('chat-widget').style.display = 'block';
-        }, 10000);
+        }, 8000);
+         setTimeout(() => {
+            document.getElementById('chat-widget').style.display = 'none';
+        }, 15000);
 
         // Click header to minimize
         document.querySelector('.chat-header').addEventListener('click', () => {
